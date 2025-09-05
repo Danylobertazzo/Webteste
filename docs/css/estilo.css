@@ -1,0 +1,42 @@
+/*selector elements*/
+body{
+    background-color: #E4F2E7;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*Selector class*/
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.Menu {
+    background-color:hwb(186 30% 45%);
+    padding: 2rem;
+    margin-right: 1rem;/**/
+    width: 30%;
+}
+
+.item_menu{
+    padding: 1rem;
+    margin: 0.7rem 0 0.7rem 0;
+    list-style: none;
+    border-bottom: solid;
+}
+.conteudo{
+    padding: 2rem;
+    width: 70%;
+}
+
+.item_menu:hover{
+    background-color: #3a5f64;
+}
+section{
+    margin-top: 2rem;
+}
+
+#dados_pessoais{
+    background-color: #28403d;
+}
+/*div{
+     border-style: groove;
+     
+}*/
