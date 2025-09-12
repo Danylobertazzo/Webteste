@@ -1,0 +1,21 @@
+label{
+    display: block;    
+    margin-top: 1rem;
+    /*margin-bottom: 1px;*/
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.formulario{
+    margin: 2rem;
+    padding: 2rem;
+}
+input{
+    border-radius: 1rem;
+    border-color: darkgray;
+    padding: 0.4rem;
+}
+
+#nasc:hover{
+    background-color: rgba(137, 207, 207, 0.623);
+}
