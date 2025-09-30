@@ -3,60 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula CSS + tags</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <title>Currículo 20225</title>
+    <link rel="stylesheet" href="curriculo.css">
+    <!-- O link correto para a versão mais recente do Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
 </head>
 <body>
     
-    <div class="container">
-    
-    <div class="Menu"><!--Menu-->
-        <nav>
-            <ul>
-                <h1>Logomarca</h1>
-                <li class="item_menu"><a href="#dados_pessoais">dados pessoais</a></li>
-                <li class="item_menu"><a href="#Experiência">Experiência</a></li>
-                <li class="item_menu"><a href="#Informações_add">Informações_add</a></li>
+    <header class="color_back"> <!--Classe para definir a cor de fundo do header-->
+        <nav class="tiralinha">
+            <ul class="cabeca2"> <!--Definir margin, tirar os pontos da lista-->
+                <li><a href="#sobre_mim" class="cabeca">Sobre mim</a></li>
+                <li><a href="#Experiencia" class="cabeca">Experiencia</a></li>
+                <li><a href="#Formacao" class="cabeca">Formação Acadêmica</a></li>
+                <li><a href="#Contato"class="cabeca">Contato</a></li>
+                <li><a href="#Competencias"class="cabeca">Competência</a></li>
             </ul>
         </nav>
+    </header>
 
+    <!-- Adicione esta div para agrupar o conteúdo principal -->
+    <div class="border">
+        <h1 class="centralizar">Danylo Samuel Bertazzo Conceição</h1>
+        <p class="centralizar">Engenharia de Software, Assistente fiscal - Contabilidade</p>
     </div>
+    <div class="caixa-conteudo">
 
-    <div class="conteudo"><!--Conteúdo-->
-        <h1>Danylo Samuel Bertazzo Conceição</h1>
-        <div id="dados_pessoais">
-            <section>
-                <h2>(Dados pessoais)</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic alias culpa quaerat libero saepe voluptatibus nihil accusantium, neque non minus, facere soluta eveniet quia voluptates, voluptas magni officia id quam!
-                Laudantium dolor cum impedit iste tempora eligendi voluptatibus eius, at ullam aliquid, ad molestias ab voluptates repellendus vero neque consequatur natus nesciunt quos veritatis architecto fugiat harum. Debitis, cupiditate quas?
-                Iusto adipisci ipsam quisquam earum nihil ullam, accusamus eum laudantium! Ab perspiciatis molestias assumenda alias, incidunt, mollitia reiciendis neque esse sit praesentium repudiandae suscipit laborum corrupti veritatis quod cum maxime.
-                Animi inventore, in esse voluptatem est laboriosam quaerat iusto et corporis excepturi quia veniam necessitatibus expedita quos at ex quasi, iure ipsa commodi praesentium voluptate amet sed, sunt adipisci. Tempora?
-                Laudantium explicabo adipisci minima non culpa natus! Explicabo et provident praesentium illo iste vero numquam laudantium doloremque? Sunt veritatis culpa nemo beatae. Adipisci, alias esse nostrum autem non nulla nam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eaque molestiae inventore ex voluptates ratione voluptatum harum quidem, necessitatibus dolore nobis optio impedit similique dolores iure? Iste dignissimos repellat iusto!</p>
-            </section>
+        <div class="foto-perfil">
+            <img src="WhatsApp Image 2025-09-29 at 11.32.52.jpeg" alt="Minha Foto de Perfil">
         </div>
-        <div id="Experiência">
-            <section>
-                <h2>(Formação academica)</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nisi quis incidunt in iure esse, error, eligendi minima voluptate maiores numquam reprehenderit iste magni quod ullam rem, laborum optio dicta!
-                Iure quia reprehenderit atque fuga praesentium ea sequi quod quisquam aliquam illo animi, nihil laudantium qui pariatur possimus nobis molestias delectus libero ex ratione voluptate laboriosam dolores facere. Fuga, eveniet?
-                Doloremque ullam molestiae quaerat sed nam quasi repellat ab repudiandae libero aliquid non, ratione ducimus obcaecati, minus nostrum id fugiat exercitationem? Debitis itaque tempore, quae dolor sint laborum dolore fugit.
-                Officia itaque dolor hic, beatae reprehenderit officiis sit recusandae temporibus autem nobis magnam excepturi eius est libero, pariatur repudiandae. Vero fuga molestias facere ullam similique quasi est. Totam, ipsa est.
-                Animi commodi porro a, sint aspernatur libero necessitatibus repellat accusantium aut sed, illo odit harum ipsum rerum cum adipisci! Totam, aperiam quos nostrum aut hic modi obcaecati natus reiciendis et.</p>
-            </section>
+        <p class="centralizar">
+        <a href="https://www.instagram.com/danylo_conceicao/" target="_blank" ><i class="bi bi-instagram"></i></a>
+        <a href="https://github.com/Danylobertazzo/Webteste" target="_blank" ><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/danylo-samuel-concei%C3%A7%C3%A3o-849457366/" target="_blank"><i class="bi bi-linkedin"></i></a>
+        </p>
 
-        </div>
-        <div id="Informações_add">
-            <section>
-                <h2>(Informações_add)</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nisi quis incidunt in iure esse, error, eligendi minima voluptate maiores numquam reprehenderit iste magni quod ullam rem, laborum optio dicta!
-                Iure quia reprehenderit atque fuga praesentium ea sequi quod quisquam aliquam illo animi, nihil laudantium qui pariatur possimus nobis molestias delectus libero ex ratione voluptate laboriosam dolores facere. Fuga, eveniet?
-                Doloremque ullam molestiae quaerat sed nam quasi repellat ab repudiandae libero aliquid non, ratione ducimus obcaecati, minus nostrum id fugiat exercitationem? Debitis itaque tempore, quae dolor sint laborum dolore fugit.
-                Officia itaque dolor hic, beatae reprehenderit officiis sit recusandae temporibus autem nobis magnam excepturi eius est libero, pariatur repudiandae. Vero fuga molestias facere ullam similique quasi est. Totam, ipsa est.
-                Animi commodi porro a, sint aspernatur libero necessitatibus repellat accusantium aut sed, illo odit harum ipsum rerum cum adipisci! Totam, aperiam quos nostrum aut hic modi obcaecati natus reiciendis et.</p>
-            </section>
+        <p class="centralizar">
+        Seja bem vindo ao meu curriculo! Meu interesse maior é para que eu possa somar em algo muito maior do que resultados rápidos e passageiros, mas em estruturas profundas e fundamentais até a ponta do projeto ou objetivo! A capacidade de executar e corresponder da melhor forma não é correspondendo a desafios ou pedidos aleatorios, mas entendendo o todo da problemática.
+        </p>
 
-        </div>
+        <form action="#" method="get">
+        <p>
+        <a href="#Contato" class="botao">Meu Contato</a></p>
+
+        </form>
     </div>
-    </div>    
+    
+    <div class="caixa-conteudo2">
+        <section class="sessao">
+        <h2 id="sobre_mim">Sobre mim:</h2>
+        <p>Iniciei minha jornada de trabalho em 2021 em um escritório de Contabilidade no Depto.Fiscal, desde então venho desenvolvendo habilidades. Juntamente com isso veio o interesse sobre a area da tecnologia em relação a programar, desde então venho estudando sobre Lógica de programação em C, desenvolvimento web HTML e CSS, e realizando alguns cursos para desenvolvimento pessoal que reflete principalmente no profissional. Meu objetivo principal não se baseia em entendimentos rasos e simples sobre as areas de trabalho que desde então venho lidando e quero lidar, mas aprofundar e entender a estrutura e conceitos de cada fundamento, para que assim eu tenha uma efetivo resultado e seja responsivel ao que as empresas e situações me propõe.</p>
+        </section>
+        
+        <section class="sessao">
+            <h2 id="Experiencia">
+                <i class="bi bi-person-workspace"></i>
+                Experiência:
+            </h2>
+            
+            <ul>
+                <li><h4>Braga contabilidade | 10/2021 - 02/2023</h4></li>
+                <li><h4>Acad contabilidade e Assesoria | 02/2023 - 09/2025</h4></li>
+                
+            </ul>
+            
+        </section>
+
+        <section class="sessao">
+        <h2 id="Formacao">
+            <i class="bi bi-mortarboard-fill"></i>
+             Formação Acadêmica:</h2>
+        <ul>
+            <li><p></p><strong>Universidade Posivito | </strong>01/2025 - 12/2028</p></li>
+            <li><p></p><strong>Ensino Médio Completo | </strong>Finalizado: 2023</p></li>
+        </ul>
+        </section>
+
+        <section class="sessao">
+            <h2 id="Contato">
+                <i class="bi bi-file-person-fill"> </i>Contato:
+            </h2>
+                <p>
+                    <i class="bi bi-envelope">   </i>
+                    <a href="mailto:conceicaodanylo81@gmail.com">conceicaodanylo81@gmail.com</a>
+                </p>
+                <p>
+                    <i class="bi bi-telephone-forward"></i>
+                    <a href="tel:+5543991041705"> +55 (043) 99104-1705</a>
+                </p>
+        </section>
+
+        <section class="sessao">
+            <h2 id="Competencias">
+                <i class="bi bi-file-person-fill"> </i>Competências:
+            </h2>
+            <ul>
+                <li>Compreensão de sistemas de problemas.</li>
+                <li>Aprimoramento constante através de leitura e cursos.</li>
+                <li>Lidar com pessoas.</li>
+                <li>Pacote office.</li>
+                <li>Sistemas e software governamentais e desenvolvidos por empresas.</li>
+                <li>Analise de tributação.</li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <div class="container">
+            <p>© 2025 Danylo Samuel Bertazzo Conceição. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+        
+    
 </body>
 </html>
