@@ -1,42 +1,108 @@
-/*selector elements*/
+/* Aplica estilo no header e nos itens de navegação */
+.header,.cabeca{
+    border-radius: 1rem;         /* arredonda as bordas em 1 rem */
+    text-decoration: none;       /* remove sublinhado de links */
+    color: rgb(255, 255, 255);   /* cor do texto branca */
+    margin: 2rem;                /* margem externa de 2 rem */
+    font-weight: bold;           /* texto em negrito */
+}
+
+/* Estilo global do corpo da página */
 body{
-    background-color: #E4F2E7;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:whitesmoke; /* cor de fundo clara */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* define fontes */
 }
-/*Selector class*/
+
+/* Aplica a mesma regra ao título principal (h1), 
+   ao nav (.tiralinha) e à lista (.cabeca2) */
+h1,.tiralinha, .cabeca2{
+    margin: 1%;                  /* margem externa de 1% */
+    list-style: none;            /* remove marcadores da lista */
+    display: flex;               /* organiza elementos em linha (flexbox) */
+    justify-content: center;     /* centraliza horizontalmente */
+    gap: 4rem ;                  /* espaço de 4 rem entre os itens */
+}
+
+/* Classe usada para fundo preto (header, por exemplo) */
+.color_back{
+    background-color: black;     /* fundo preto */
+}
+
+/* Centraliza texto (usada em vários pontos do HTML) */
+.centralizar{ 
+    text-align: center;          /* alinha o conteúdo ao centro */
+}
+
+/* Estiliza a caixa preta abaixo do header (nome + profissão) */
+.border{
+    background-color: rgb(0, 0, 0); /* fundo preto */
+    margin-top: 0.5rem ;            /* margem superior pequena */
+    border-style: groove;           /* borda com efeito entalhado */
+    color: aliceblue;               /* cor do texto azul claro */
+}
+
+/* Estilo aplicado ao formulário (onde fica o botão "Meu contato") */
+form{
+    text-align: center;             /* centraliza o botão */
+    bottom: 1rem;                   /* sem efeito aqui, pois não tem position */
+}
+
+/* Botão estilizado ("Meu contato") */
+.botao{
+    background: linear-gradient(120deg, #12188a, #01021f); /* fundo com degradê azul */
+    color: white;                  /* cor do texto branca */
+    font-size: 16px;               /* tamanho do texto */
+    font-weight: bold;             /* texto em negrito */
+    padding: 12px 25px;            /* espaço interno (altura x largura) */
+    border: none;                  /* remove borda padrão */
+    border-radius: 5px;            /* bordas levemente arredondadas */
+    cursor: pointer;               /* transforma cursor em "mãozinha" */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* sombra projetada */
+}
+
+/* Efeito ao passar o mouse no botão */
+.botao:hover{
+    color: #ffffff;                /* mantém a cor branca (poderia mudar) */
+}
+
+/* Estilo padrão para todos os links */
+a{
+    color: rgb(107, 102, 102);     /* cinza escuro */
+}
+
+/* Caixa principal (foto, redes sociais, apresentação e botão) */
+.caixa-conteudo {
+    background-color: #fff;        /* fundo branco */
+    padding: 1rem;                 /* espaço interno */
+    margin: 1rem auto;             /* margem externa e centralização */
+    max-width: 1400px;             /* largura máxima */
+    border-radius: 10px;           /* bordas arredondadas */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* sombra suave */
+    text-align: center;            /* centraliza todo o conteúdo dentro */
+}
+
+/* Segunda caixa (sobre mim, experiência, formação, etc.) */
+.caixa-conteudo2{
+    background-color: #fff;        /* fundo branco */
+    padding: 1rem;                 /* espaço interno */
+    margin: 1rem auto;             /* centraliza e dá espaço externo */
+    max-width: 1400px;             /* largura máxima */
+    /* responsivo pois diminui em telas pequenas */
+}
+
+/* Estilo da foto de perfil */
+.foto-perfil img {
+    width: 180px;                  /* largura fixa */
+    height: 180px;                 /* altura fixa */
+    border-radius: 50%;            /* deixa a imagem redonda */
+    object-fit: cover;             /* corta excesso sem distorcer */
+}
+
+/* Estilo do rodapé */
 .container{
-    display: flex;
-    flex-direction: row;
+    text-align: center;            /* centraliza texto */
+    color: white;                  /* texto branco */
+    background-color: black;       /* fundo preto */
+    border-style: double;          /* borda dupla */
+    padding-top: 2%;               /* espaço acima do conteúdo */
 }
-.Menu {
-    background-color:hwb(186 30% 45%);
-    padding: 2rem;
-    margin-right: 1rem;/**/
-    width: 30%;
-}
-
-.item_menu{
-    padding: 1rem;
-    margin: 0.7rem 0 0.7rem 0;
-    list-style: none;
-    border-bottom: solid;
-}
-.conteudo{
-    padding: 2rem;
-    width: 70%;
-}
-
-.item_menu:hover{
-    background-color: #3a5f64;
-}
-section{
-    margin-top: 2rem;
-}
-
-#dados_pessoais{
-    background-color: #28403d;
-}
-/*div{
-     border-style: groove;
-     
-}*/
